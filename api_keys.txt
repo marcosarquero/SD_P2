@@ -1,0 +1,5 @@
+Clave:
+e91f2432c15ca5dd21a401b5d3b4247c
+
+Secret:
+770aa68ef1c54ca2

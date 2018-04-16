@@ -1,0 +1,11 @@
+
+#response > .mosaico {
+    display: inline;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin: 1px;
+}
+
+.mosaico:hover {
+    cursor: pointer;
+}

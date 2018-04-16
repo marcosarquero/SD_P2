@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Práctica 2 Distribuidos</title>
+  <meta name="description" content="Practica de Sistemas Distribuidos asignatura de Grado de la Universidad Rey Juan Carlos">
+  <meta name="author" content="">
+  
+
+    <!--CARGAMOS JQUERY Y BOOTSTRAP-->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- CSS PERSONALIZADO-->
+    <link href="estilos.css" rel="stylesheet">
+
+    <!--CARGAMOS SCRIPTS PERSONALIZADOS-->
+    <script src="credencialesFLickr.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="page-wrapper">
+  <br>
+  <div class="row">
+        <div class="col-lg-2">
+            <center><h3>Flickr Distribuidos</h3></center>
+            <hr>
+            <center><h5>Fotos guardadas:</h5></center>
+            <div >
+                <ul id="list-saved-photos">
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-10">
+           
+                <div class="form-group">
+                    <label class="sr-only" for="in-search">Email address</label>
+                    <input type="text" class="form-control" id="in-search" placeholder="Buscar fotos en Flickr..." autofocus>
+                </div>
+                <input type="button" id="btn-search" class="btn btn-default" value="Buscar">
+
+            <br><hr>
+
+            <div id="img-detail" class="hidden">
+                <h4>Detalles de foto:</h4>
+                <div id="img-detail-pic"></div>
+                <span><b>Título de imagen: </b></span><span id="img-prop-title"></span><br>
+                <span><b>Descripción de la imagen: </b></span><span id="img-prop-desc"></span><br>
+                <span><b>Foto tomada: </b></span><span id="img-prop-taken"></span><br>
+                <span><b>Albunes: </b></span><br><span id="img-prop-albuns"></span><br>
+                <span><b>Grupos: </b></span><br><span id="img-prop-pools"></span><br>
+
+
+                <br><br>
+                <button type="button" class="btn btn-success btn-sm" id="img-save">Guardar Foto</button>
+                <button type="button" class="btn btn-danger btn-sm" id="img-close">CERRAR</button>
+
+
+            </div>
+
+            <br><hr>
+
+            <div id="response"></div>
+        </div>
+    </div>
+</div>
+
+
+
+ 
+</body>
+</html>
